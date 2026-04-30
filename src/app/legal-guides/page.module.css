@@ -1,0 +1,186 @@
+.main {
+  background-color: var(--bg-main);
+}
+
+.header {
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.searchBox {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--color-white);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+/* Grid */
+.gridSection {
+  padding: 4rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0,0,0,0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-hover);
+  color: var(--color-white);
+}
+
+.card:hover p, .card:hover .learnMore {
+  color: var(--color-white);
+}
+
+.cardHeader {
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  background-color: var(--color-secondary-light);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.learnMore {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+}
+
+/* Wisdom Banner */
+.wisdomBanner {
+  background-color: var(--color-secondary-light);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.wisdomIcon {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+.wisdomText h3 {
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.wisdomText p {
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* Guidance Section */
+.guidance {
+  padding: 6rem 0;
+}
+
+.guidanceCard {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  display: flex;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.guidanceImage {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.placeholderImage {
+  font-size: 5rem;
+}
+
+.guidanceContent {
+  flex: 1.5;
+  padding: 4rem;
+}
+
+.guidanceLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.guidanceContent h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.guidanceContent p {
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .guidanceCard {
+    flex-direction: column;
+  }
+}

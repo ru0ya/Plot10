@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--color-white);
+  padding: 5rem 0 2rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  margin-top: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  font-family: var(--font-lora);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.mission {
+  color: var(--color-text-light);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.linksColumn h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.linksColumn ul {
+  list-style: none;
+}
+
+.linksColumn ul li {
+  margin-bottom: 0.75rem;
+}
+
+.linksColumn a, .linksColumn p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.linksColumn a:hover {
+  color: var(--color-primary);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+.bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

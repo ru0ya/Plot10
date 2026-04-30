@@ -1,0 +1,223 @@
+.main {
+  background-color: var(--bg-main);
+}
+
+.layout {
+  display: flex;
+  gap: 5rem;
+  padding: 8rem 0;
+}
+
+.article {
+  flex: 2;
+}
+
+.meta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin-bottom: 2.5rem;
+}
+
+.author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.authorAvatar {
+  width: 48px;
+  height: 48px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.author h4 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.author p {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.featuredImage {
+  margin-bottom: 4rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.content h2, .content h3 {
+  margin: 3rem 0 1.5rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 2rem;
+  margin: 3rem 0;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-primary);
+  font-family: var(--font-lora);
+}
+
+.checklist {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.checklist li {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.wisdomBanner {
+  background-color: var(--color-secondary-light);
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.wisdomIcon {
+  font-size: 1.5rem;
+}
+
+.wisdomBanner h4 {
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.wisdomBanner p {
+  font-size: 0.95rem;
+  color: var(--color-secondary);
+  margin-bottom: 0;
+}
+
+.share {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  gap: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sidebarBox {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+}
+
+.sidebarBox h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.sidebarBox p {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.sidebarBox button {
+  width: 100%;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.sidebarSection h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+.sidebarLinks {
+  list-style: none;
+}
+
+.sidebarLinks li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.updateItem {
+  margin-bottom: 2rem;
+}
+
+.updateItem span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.updateItem h4 {
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .layout {
+    flex-direction: column;
+  }
+}
